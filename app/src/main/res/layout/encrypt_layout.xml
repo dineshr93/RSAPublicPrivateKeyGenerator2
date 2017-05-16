@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+
+        android:layout_marginTop="23dp"
+        android:text="Paste Public Key"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:hint="recepeints public key" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:textStyle="bold"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="11dp"
+        android:text="Enter text message (107 char)" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:maxLength="107"
+        android:singleLine="true"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="your message here" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Encrypted message"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:hint="Encrypted message will be shown here"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copy Encrypted Msg"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encrypt the msg"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:textStyle="bold"
+        android:layout_marginTop="29dp"
+        android:text="NOTE: Your message should not be more than 106 characters" />
+</RelativeLayout>
